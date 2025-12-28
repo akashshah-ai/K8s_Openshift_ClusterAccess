@@ -1,4 +1,4 @@
-# Kubernetes/OpenShift Service Account Kubeconfig Project
+# Kubernetes/OpenShift Cluster Access
 
 Creates a permanent, user-independent KUBECONFIG file for external scripts to access Kubernetes API with minimal privileges. Follows Principle of Least Privilege for secure programmatic access.
 
