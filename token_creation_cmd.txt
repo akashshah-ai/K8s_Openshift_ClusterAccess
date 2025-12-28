@@ -1,0 +1,8 @@
+# API server URL
+kubectl config view --minify -o jsonpath='{.clusters[0].cluster.server}'
+
+# CA certificate data (base64)
+kubectl config view --raw -o jsonpath='{.clusters[0].cluster.certificate-authority-data}'
+
+# Service account token (after creating secret from previous step)
+kubectl -n cluster-access get secret cluster-access-token -o jsonpath='{.data.token}' | base64 -d
